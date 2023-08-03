@@ -24,3 +24,4 @@ jobs:
         server: ftp.techblog.pro
         username: vmarchenko@techblog.pro
         password: ${{ secrets.password }}
+        protocol: ftps
