@@ -15,8 +15,10 @@ jobs:
       
     - name: 🔨 Build Project
       run: |
-        npx install
-        npx run build && npx run export
+        npm install
+        npm run build --if-present
+        npm test
+        
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
