@@ -24,4 +24,4 @@ jobs:
         server: 104.251.111.203
         username: vmarchenko@techblog.pro
         password: ${{ secrets.password }}
-        protocol: ftps
+        port: 21
