@@ -24,4 +24,4 @@ jobs:
         server: 104.251.111.203
         username: vmarchenko@dev.techblog.pro
         password: ${{ secrets.password }}
-        port: 21
+        timeout: 90000
