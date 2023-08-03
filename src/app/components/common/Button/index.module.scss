@@ -1,0 +1,45 @@
+@import '@/app/assets/styles/abstracts';
+
+.button {
+  @include text(text, 2);
+
+  padding: 10px 20px;
+  color: var(--color-white);
+  background-color: var(--color-gray-dark);
+  border-style: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  width: 100%;
+
+  &--secondary {
+    opacity: 0.5;
+  }
+
+  &--tertiary {
+    opacity: 0.1;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    background: var(--linear-gradient-button);
+    background-color: var(--color-white);
+    color: var(--color-gray-dark);
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 6px;
+      background-color: var(--color-gray-dark);
+      height: 100%;
+    }
+  }
+}
