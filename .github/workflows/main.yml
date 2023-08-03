@@ -21,7 +21,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.techblog.pro
+        server: 104.251.111.203
         username: vmarchenko@techblog.pro
         password: ${{ secrets.password }}
         protocol: ftps
