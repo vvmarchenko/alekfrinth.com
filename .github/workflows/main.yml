@@ -26,3 +26,4 @@ jobs:
         username: vmarchenko@dev.techblog.pro
         password: ${{ secrets.password }}
         timeout: 90000
+        local-dir: src/app/
