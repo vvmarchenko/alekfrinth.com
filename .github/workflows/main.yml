@@ -15,9 +15,8 @@ jobs:
       
     - name: 🔨 Build Project
       run: |
-        npm install
-        npm run build --if-present
-        npm test
+        next install
+        next build && next export
         
     
     - name: 📂 Sync files
