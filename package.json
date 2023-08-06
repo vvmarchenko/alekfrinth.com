@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
+    "export": "next export",
+    "serve": "npx serve@latest out",
     "start": "NODE_ENV=production node server.js",
     "lint": "next lint",
     "prepare": "husky install"
