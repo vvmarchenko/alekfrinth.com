@@ -22,7 +22,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: 104.251.111.203
+        server: 162.0.232.223
         username: vmarchenko@dev.techblog.pro
         password: ${{ secrets.password }}
         timeout: 90000
